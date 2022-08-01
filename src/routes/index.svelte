@@ -1,3 +1,16 @@
+<script>
+import Card from "$lib/components/card.svelte";
+
+    const cardContent = [
+        {
+            title: "Consultation",
+            path: "static/images/gamer.jpg",
+            text: "I can advise you on upgrades, repairs and builds.",
+            list: ["Fast!", "Easy!", "Helpful!"]
+        }
+    ]
+</script>
+
 <main class="background-image">
 
         <div class="text-overlay">
@@ -6,6 +19,10 @@
             <p>I am experienced in upgrading, fixing and building computers. I can troubleshoot your issues and help you find the answers quickly so you can get back to work or play! I can build you a gaming rig that is high performance, or a work pc set up for your unique needs.</p>
         </div>
 </main>
+
+{#each cardContent as {title, path, text, list}}
+    <Card {title} {path} {text} {list}/>
+{/each}
 
 <style>
     main {
