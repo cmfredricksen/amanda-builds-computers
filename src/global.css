@@ -4,6 +4,20 @@
     --font-heading: "Titillium Web", "Courier New", monospace;
     --font-text: "Roboto Mono", monospace;
     --font-accent: "Pacifico", sans-serif;
+
+    --clr-purple-black: #1a0033;
+    --clr-purple-dk: #250148;
+    --clr-purple: #6600cc;
+    --clr-purple-med: #901aff;
+    --clr-purple-lt: #ce99ff;
+    --clr-purple-white: #f3e6ff;
+    
+    --clr-black: #222;
+    --clr-white: #eee;
+
+    --clr-accent-turq: #00ffff;
+    --clr-accent-orange: #ff8000;
+
 }
 
 * {
@@ -14,10 +28,14 @@
 
 body {
     font-family: var(--font-text);
+    background-color: var(--clr-purple-black);
+    color: var(--clr-purple-white);
+    
 }
 
 h1, h2, h3 {
     font-family: var(--font-heading);
+    color: var(--clr-accent-turq)
 }
 
 a, li {
@@ -26,4 +44,17 @@ a, li {
 
 p {
     font-family: var(--font-text)
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-accent-turq);
+}
+
+a:hover {
+    color: var(--clr-accent-orange);
+}
+
+img {
+    width: 100%;
 }
