@@ -30,7 +30,7 @@ body {
     font-family: var(--font-text);
     background-color: var(--clr-purple-black);
     color: var(--clr-purple-white);
-    
+    padding: 0 2rem;
 }
 
 h1, h2, h3 {

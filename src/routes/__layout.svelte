@@ -15,9 +15,6 @@
 
 <style>
     .wrapper {
-        /* width: 80%; */
-        margin: 0 auto ;
         background-color: var(--clr-purple-black);
-        padding: .5rem 3rem;
     }
 </style>

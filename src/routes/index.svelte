@@ -50,9 +50,14 @@ import Card from "$lib/components/card.svelte";
     main {
         width: 100%;
         margin: 1rem 0;
+        background-image: url(/static/images/mboard.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
-
+    
     .hero-section {
+        opacity: .8;
         height: 30vh;
         text-align: center;
         background-color: var(--clr-purple-dk);

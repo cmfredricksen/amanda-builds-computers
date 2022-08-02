@@ -16,6 +16,9 @@
         padding: .5rem .5rem;
         background-color: var(--clr-purple-black);
         border-bottom: 3px solid var(--clr-purple-dk);
+        position: sticky;
+        width: 100%;
+        top: 0;
     }
 
     h2 {

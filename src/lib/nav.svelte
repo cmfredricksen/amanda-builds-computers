@@ -7,6 +7,10 @@
         {
             title: "Services",
             path: "/services"
+        },
+        {
+            title: "Prices",
+            path: "/services#prices"
         }
     ]
 </script>
