@@ -21,4 +21,7 @@
     a {
         margin-left: 1rem;
     }
+    nav {
+        text-align: right;
+    }
 </style>

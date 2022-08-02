@@ -36,7 +36,9 @@ a:hover {
 }
 a:hover i {
     background-color: var(--clr-purple-dk);
+
 }
+
 h3 {
     color: var(--clr-accent-turq);
     margin-bottom: 1rem;
@@ -44,7 +46,7 @@ h3 {
 
 i {
     font-size: 4rem;
-    border: 1px solid var(--clr-purple-white);
+    border: 1px solid var(--clr-purple);
     margin-bottom: 2rem;
     padding: 1rem;
     border-radius: .5rem;

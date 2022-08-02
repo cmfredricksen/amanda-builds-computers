@@ -4,28 +4,28 @@ import Card from "$lib/components/card.svelte";
     const cardContent = [
         {
             title: "Consultation",
-            path: "#",
+            path: "/services#consult",
             text: "I can advise you on upgrades, repairs and builds.",
             list: ["Fast!", "Easy!", "Helpful!"],
             icon: "phone"
         },
         {
             title: "Upgrades",
-            path: "#",
+            path: "/services#upgrade",
             text: "Give your computer new life with added memory and storage",
             list: ["High Quality!", "Fast Turnaround"],
             icon: "memory"
         },
         {
             title: "Repairs",
-            path: "#",
+            path: "/services#repair",
             text: "Fix or replace old and worn parts.",
             list: ["Professional Work"],
             icon: "home_repair_service"
         },
         {
             title: "Custom Builds",
-            path: "#",
+            path: "/services#build",
             text: "Get a custom built computer to meet your needs.",
             list: ["Gaming!", "Coding!", "Office!"],
             icon: "build"
