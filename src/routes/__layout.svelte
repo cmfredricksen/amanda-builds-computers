@@ -4,6 +4,9 @@
     import Footer from "$lib/footer.svelte";
 </script>
 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <Header />
 <div class="wrapper">
     <slot />

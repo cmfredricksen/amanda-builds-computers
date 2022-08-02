@@ -4,25 +4,47 @@ import Card from "$lib/components/card.svelte";
     const cardContent = [
         {
             title: "Consultation",
-            path: "static/images/gamer.jpg",
+            path: "#",
             text: "I can advise you on upgrades, repairs and builds.",
-            list: ["Fast!", "Easy!", "Helpful!"]
-        }
+            list: ["Fast!", "Easy!", "Helpful!"],
+            icon: "phone"
+        },
+        {
+            title: "Upgrades",
+            path: "#",
+            text: "Give your computer new life with added memory and storage",
+            list: ["High Quality!", "Fast Turnaround"],
+            icon: "memory"
+        },
+        {
+            title: "Repairs",
+            path: "#",
+            text: "Fix or replace old and worn parts.",
+            list: ["Professional Work"],
+            icon: "home_repair_service"
+        },
+        {
+            title: "Custom Builds",
+            path: "#",
+            text: "Get a custom built computer to meet your needs.",
+            list: ["Gaming!", "Coding!", "Office!"],
+            icon: "build"
+        },
     ]
 </script>
 
-<main class="background-image">
-
-        <div class="text-overlay">
-            <h3>When you need a hand with your computer...</h3>
-            
-            <p>I am experienced in upgrading, fixing and building computers. I can troubleshoot your issues and help you find the answers quickly so you can get back to work or play! I can build you a gaming rig that is high performance, or a work pc set up for your unique needs.</p>
-        </div>
+<main>
+    <div class="hero-section">
+        <h3>When you need a hand with your computer...</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores sed laudantium dolor consequatur vero modi expedita officiis laborum alias suscipit? Provident odio, tempora sequi, aperiam, ullam iure similique ad doloremque unde aliquid ab in culpa! Suscipit excepturi reiciendis ex eligendi debitis commodi ea iste vitae ipsa dolorum, quaerat velit exercitationem.</p>
+    </div>
 </main>
 
-{#each cardContent as {title, path, text, list}}
-    <Card {title} {path} {text} {list}/>
-{/each}
+<div class="card-container">
+    {#each cardContent as {title, path, text, list, icon}}
+    <Card {title} {path} {text} {list} {icon}/>
+    {/each}
+</div>
 
 <style>
     main {
@@ -30,36 +52,22 @@ import Card from "$lib/components/card.svelte";
         margin: 1rem 0;
     }
 
-    .background-image{
-        border: 2px solid var(--clr-purple-lt);
-        box-shadow: 2px 2px var(--clr-accent-turq);
-        background-image: url("static/images/mboard.jpg");
+    .hero-section {
+        height: 30vh;
+        text-align: center;
         background-color: var(--clr-purple-dk);
-        height: 50vh;
-        border-radius: .5rem;
-    }
-
-    .text-overlay {
-        background-color: var(--clr-purple-black);
-        opacity: .9;
-        height: 100%;
-        padding: 0 2rem;
-        justify-content: center;
+        padding: 2rem 3rem;
         display: flex;
         flex-direction: column;
-
+        justify-content: space-between;
+        border-left: 1px solid var(--clr-accent-turq);
+        border-right: 1px solid var(--clr-accent-turq);
     }
 
-    .text-overlay p, .text-overlay h3 {
-        color: var(--clr-white);
-        font-weight: bold;
-        /* margin: auto; */
-        line-height: 3;
-        text-align: center;
-    }
-
-    .text-overlay h3 {
-        color:var(--clr-accent-turq);
+    .card-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem 0;
     }
 
 </style>
