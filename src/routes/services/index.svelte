@@ -1,20 +1,21 @@
+<svelte:head>
+    <title>Amanda Builds Computers | Services</title>
+</svelte:head>
 
-<main>
-    <div class="bg-image">
-        <div class="color-overlay">
-            <h2>Services Offered</h2>
-
-    <div class="page-links">
-        <a href="#consult">Consultation</a>
-        <a href="#upgrade">Upgrades</a>
-        <a href="#repair">Repairs</a>
-        <a href="#build">Build</a>
-    </div>
-
-
+<div class="bg-image">
+    <div class="color-overlay">
+        <h2>Services Offered</h2>
+        
+        <div class="page-links">
+            <a href="#consult">Consultation <i class="material-icons">call</i></a>
+            <a href="#upgrades">Upgrades <i class="material-icons">memory</i></a>
+            <a href="#repairs">Repairs <i class="material-icons">home_repair_service</i></a>
+            <a href="#build">Build <i class=material-icons>build</i></a>
         </div>
     </div>
+</div>
 
+<main>
     <section class="consultation" id="consult">
 
         <h2>Consultation <i class="material-icons">call</i> </h2>
@@ -23,13 +24,13 @@
 
 
     </section>
-    <section class="upgrade" id="upgrade">
+    <section class="upgrade" id="upgrades">
 
         <h2>Upgrades <i class="material-icons">memory</i> </h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corporis quidem earum repellat dolore ex error similique sit provident dolor fugit illum inventore repellendus maxime mollitia beatae culpa temporibus, quo praesentium non laboriosam a, assumenda voluptas. Esse aut perferendis odio in animi obcaecati tempora maxime voluptatum, iusto repellendus excepturi deleniti! Ad voluptatibus id, totam soluta aliquam suscipit unde earum repellat itaque neque amet vero saepe, nostrum praesentium pariatur beatae. Minima recusandae quibusdam accusamus, veniam ullam sit esse illum magnam rem sapiente, vero non nemo illo dolor. Exercitationem quia assumenda explicabo. Facere nihil fugit iure suscipit ex aliquam quam exercitationem beatae!</p>
     <a href="#top"><i class="material-icons">arrow_circle_up</i> </a>
     </section>
-    <section class="repair" id="repair">
+    <section class="repair" id="repairs">
 
         <h2>Repairs <i class="material-icons">home_repair_service</i> </h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, consequatur? Perferendis quam ipsum quisquam odit placeat neque at earum ad ipsa eum? Iure sequi atque, deleniti rerum dignissimos non odit aliquam nemo blanditiis cupiditate distinctio reprehenderit rem porro molestias perferendis, temporibus optio, autem quam consequatur ex ea fugiat! Odio dolorum molestiae velit, animi ipsa pariatur repellat quidem hic natus dignissimos eos ullam iste. Ducimus necessitatibus sequi deleniti numquam natus fuga labore placeat debitis eaque. Rem libero error obcaecati ut, blanditiis fugiat debitis ea? Consequuntur perspiciatis totam molestias sint aliquam illum consequatur quos vel? Sint, ab iusto ratione fugiat corporis a!</p>
@@ -52,12 +53,10 @@
     main {
         width: 70%;
         margin: 0 auto;
-        border-left: 1px solid var(--clr-purple);
-        border-right: 1px solid var(--clr-purple);
-        background-color: var(--clr-purple-dk);
+        background-color: var(--clr-purple-black);
     }
     
-    main h2 {
+     h2 {
         text-align: center;
         padding: 2rem 0 1rem;
         font-weight: 1000;
@@ -65,12 +64,17 @@
 
     .page-links {
         text-align: center;
+        background-color: var(--clr-black);
     }
     
     .page-links a {
         margin: 0 1rem;
         color: var(--clr-accent-orange);
         font-weight: 1000;
+    }
+
+    .page-links i {
+        color: var(--clr-purple-lt);
     }
     
     .page-links a:hover {
@@ -85,14 +89,17 @@
         background-size: cover;
         background-position: center;
         background-color: var(--clr-purple-dk);
-        height: 25vh;
     }
 
     .color-overlay {
-        height: 100%;
-        background-color: var(--clr-purple-black);
+        height: 30vh;
+        background-color: var(--clr-black);
         opacity: .7;
-        border: 1px dotted var(--clr-accent-turq);
+        border-left: 1px solid var(--clr-accent-turq);
+        border-right: 1px solid var(--clr-accent-turq);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     section {
@@ -104,7 +111,7 @@
     }
 
     section:nth-child(even) {
-        background-color: var(--clr-purple-black);
+        background-color: var(--clr-purple-dk);
     }
 
     section h2 {

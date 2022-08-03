@@ -11,14 +11,14 @@ import Card from "$lib/components/card.svelte";
         },
         {
             title: "Upgrades",
-            path: "/services#upgrade",
+            path: "/services#upgrades",
             text: "Give your computer new life with added memory and storage",
             list: ["High Quality!", "Fast Turnaround"],
             icon: "memory"
         },
         {
             title: "Repairs",
-            path: "/services#repair",
+            path: "/services#repairs",
             text: "Fix or replace old and worn parts.",
             list: ["Professional Work"],
             icon: "home_repair_service"
@@ -33,6 +33,9 @@ import Card from "$lib/components/card.svelte";
     ]
 </script>
 
+<svelte:head>
+    <title>Amanda Builds Computers | Home</title>
+</svelte:head>
 <main>
     <div class="hero-section">
         <h3>When you need a hand with your computer...</h3>
