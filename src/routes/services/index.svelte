@@ -51,7 +51,7 @@
 
 <style>
     main {
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
         background-color: var(--clr-purple-black);
     }
@@ -64,12 +64,12 @@
 
     .page-links {
         text-align: center;
-        background-color: var(--clr-black);
+        background-color: var(--clr-accent-purple-black);
     }
     
     .page-links a {
         margin: 0 1rem;
-        color: var(--clr-accent-orange);
+        color: var(--clr-accent-turq);
         font-weight: 1000;
     }
 
@@ -88,15 +88,15 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        background-color: var(--clr-purple-dk);
     }
 
     .color-overlay {
         height: 30vh;
-        background-color: var(--clr-black);
+        background-color: var(--clr-purple-dk);
         opacity: .7;
         border-left: 1px solid var(--clr-accent-turq);
         border-right: 1px solid var(--clr-accent-turq);
+        /* border: 1px solid var(--clr-accent-turq); */
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -108,6 +108,7 @@
         justify-content: space-between;
         border: 0 1px 1px 1px dotted var(--clr-purple);
         padding: 3rem 2rem;
+        border: 1px solid var(--clr-accent-turq);
     }
 
     section:nth-child(even) {
