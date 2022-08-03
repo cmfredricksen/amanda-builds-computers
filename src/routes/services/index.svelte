@@ -108,7 +108,9 @@
         justify-content: space-between;
         border: 0 1px 1px 1px dotted var(--clr-purple);
         padding: 3rem 2rem;
-        border: 1px solid var(--clr-accent-turq);
+        margin: 4rem 0;
+        border: 1px solid var(--clr-purple);
+        border-radius: .5rem;
     }
 
     section:nth-child(even) {
